@@ -49,8 +49,7 @@
 </h4>
 <div class="description">
 
- <p> Executed by a DelegationService.registerValidator : and registers a validator info <br>
-sets validatorAddress to to the address of the caller
+ <p> Executed by a DelegationService.registerValidator : and registers a validator info sets validatorAddress to to the address of the caller
  </p>
 </div>
 
@@ -108,8 +107,7 @@ sets validatorAddress to to the address of the caller
 </h4>
 <div class="description">
 
- <p> this function is used by DelegationRequestManager.checkValidatorAccess <br>
-to check if a validatorId is matching the validatorAddress
+ <p> this function is used by DelegationRequestManager.checkValidatorAccess to check if a validatorId is matching the validatorAddress
  </p>
 </div>
 
