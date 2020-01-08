@@ -1,4 +1,4 @@
-# `SkaleBalances`
+# `SkaleVerifier`
 
 
 
@@ -8,8 +8,9 @@
 ## Functions
 
 - [constructor(newContractsAddress)](#constructor)
-- [withdrawBalance(amountOfTokens)](#withdrawBalance)
-- [stashBalance(recipient, bountyForMiner)](#stashBalance)
+- [verifySchainSignature(signA, signB, hash, counter, hashA, hashB, schainName)](#verifySchainSignature)
+- [verify(signA, signB, hash, counter, hashA, hashB, pkx1, pky1, pkx2, pky2)](#verify)
+- [checkHashToGroupWithHelper(hash, counter, hashA, hashB)](#checkHashToGroupWithHelper)
 
 --- 
 
@@ -31,13 +32,25 @@ newContractsAddress
 </div>
 </div>
 
-##### `withdrawBalance`
+##### `verifySchainSignature`
 
-<div class="funcnamewithdrawBalance contract-function">
-<h4 id="withdrawBalance">
-<code>withdrawBalance(<span class="var-type">uint256</span>
-amountOfTokens
-)<span class="var-type"></span></code>
+<div class="funcnameverifySchainSignature contract-function">
+<h4 id="verifySchainSignature">
+<code>verifySchainSignature(<span class="var-type">uint256</span>
+signA
+, <span class="var-type">uint256</span>
+signB
+, <span class="var-type">bytes32</span>
+hash
+, <span class="var-type">uint256</span>
+counter
+, <span class="var-type">uint256</span>
+hashA
+, <span class="var-type">uint256</span>
+hashB
+, <span class="var-type">string</span>
+schainName
+)<span class="var-type"> → bool</span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
@@ -46,16 +59,53 @@ amountOfTokens
 </div>
 </div>
 
-##### `stashBalance`
+##### `verify`
 
-<div class="funcnamestashBalance contract-function">
-<h4 id="stashBalance">
-<code>stashBalance(<span class="var-type">address</span>
-recipient
+<div class="funcnameverify contract-function">
+<h4 id="verify">
+<code>verify(<span class="var-type">uint256</span>
+signA
 , <span class="var-type">uint256</span>
-bountyForMiner
-)<span class="var-type"></span></code>
-<span class="item">external</span>
+signB
+, <span class="var-type">bytes32</span>
+hash
+, <span class="var-type">uint256</span>
+counter
+, <span class="var-type">uint256</span>
+hashA
+, <span class="var-type">uint256</span>
+hashB
+, <span class="var-type">uint256</span>
+pkx1
+, <span class="var-type">uint256</span>
+pky1
+, <span class="var-type">uint256</span>
+pkx2
+, <span class="var-type">uint256</span>
+pky2
+)<span class="var-type"> → bool</span></code>
+<span class="item">public</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `checkHashToGroupWithHelper`
+
+<div class="funcnamecheckHashToGroupWithHelper contract-function">
+<h4 id="checkHashToGroupWithHelper">
+<code>checkHashToGroupWithHelper(<span class="var-type">bytes32</span>
+hash
+, <span class="var-type">uint256</span>
+counter
+, <span class="var-type">uint256</span>
+hashA
+, <span class="var-type">uint256</span>
+hashB
+)<span class="var-type"> → bool</span></code>
+<span class="item">internal</span>
 </h4>
 <div class="description">
 

@@ -1,45 +1,62 @@
-# `ContractManager`
+# `Migrations`
 
 
+
+--- 
+
+## Modifiers
+- [restricted()](#restricted)
 
 --- 
 
 
 ## Functions
 
-- [setContractsAddress(contractsName, newContractsAddress)](#setContractsAddress)
-- [getContract(name)](#getContract)
+- [setCompleted(completed)](#setCompleted)
+- [upgrade(new_address)](#upgrade)
 
 --- 
 
 
 
+##### `restricted`
 
-##### `setContractsAddress`
+<div class="funcnamerestricted contract-function">
+<h4 id="restricted"><a class="anchor" href="#restricted"></a>
+<code>restricted() <span class="var-type"></span></code>
+<span class="item"></span>
+</h4>
+<div class="description">
 
-<div class="funcnamesetContractsAddress contract-function">
-<h4 id="setContractsAddress">
-<code>setContractsAddress(<span class="var-type">string</span>
-contractsName
-, <span class="var-type">address</span>
-newContractsAddress
+
+</div>
+</div>
+
+--- 
+
+
+##### `setCompleted`
+
+<div class="funcnamesetCompleted contract-function">
+<h4 id="setCompleted">
+<code>setCompleted(<span class="var-type">uint256</span>
+completed
 )<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
- <p> Adds actual contract to mapping of actual contract addresses
- </p>
+
 </div>
 </div>
 
-##### `getContract`
+##### `upgrade`
 
-<div class="funcnamegetContract contract-function">
-<h4 id="getContract">
-<code>getContract(<span class="var-type">string</span>
-name
-)<span class="var-type"> → address contractAddress</span></code>
+<div class="funcnameupgrade contract-function">
+<h4 id="upgrade">
+<code>upgrade(<span class="var-type">address</span>
+new_address
+)<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">

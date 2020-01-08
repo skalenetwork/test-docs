@@ -1,50 +1,92 @@
-# `ContractManager`
+# `DelegationRequestManager`
 
-
+ Handles Delegation Requests <br>
+Requests are created/canceled by the delegator <br>
+Requests are accepted by the validator
 
 --- 
 
 
 ## Functions
 
-- [setContractsAddress(contractsName, newContractsAddress)](#setContractsAddress)
-- [getContract(name)](#getContract)
+- [constructor(newContractsAddress)](#constructor)
+- [createRequest(holder, validatorId, amount, delegationPeriod, info)](#createRequest)
+- [cancelRequest(delegationId)](#cancelRequest)
+- [acceptRequest(delegationId)](#acceptRequest)
 
 --- 
 
 
 
 
-##### `setContractsAddress`
+##### `constructor`
 
-<div class="funcnamesetContractsAddress contract-function">
-<h4 id="setContractsAddress">
-<code>setContractsAddress(<span class="var-type">string</span>
-contractsName
-, <span class="var-type">address</span>
+<div class="funcnameconstructor contract-function">
+<h4 id="constructor">
+<code>constructor(<span class="var-type">address</span>
 newContractsAddress
+)<span class="var-type"></span></code>
+<span class="item">public</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `createRequest`
+
+<div class="funcnamecreateRequest contract-function">
+<h4 id="createRequest">
+<code>createRequest(<span class="var-type">address</span>
+holder
+, <span class="var-type">uint256</span>
+validatorId
+, <span class="var-type">uint256</span>
+amount
+, <span class="var-type">uint256</span>
+delegationPeriod
+, <span class="var-type">string</span>
+info
+)<span class="var-type"> → uint256 delegationId</span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+ <p> creates a Delegation Request
+ </p>
+</div>
+</div>
+
+##### `cancelRequest`
+
+<div class="funcnamecancelRequest contract-function">
+<h4 id="cancelRequest">
+<code>cancelRequest(<span class="var-type">uint256</span>
+delegationId
 )<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
- <p> Adds actual contract to mapping of actual contract addresses
+ <p> cancels a Delegation Request
  </p>
 </div>
 </div>
 
-##### `getContract`
+##### `acceptRequest`
 
-<div class="funcnamegetContract contract-function">
-<h4 id="getContract">
-<code>getContract(<span class="var-type">string</span>
-name
-)<span class="var-type"> → address contractAddress</span></code>
+<div class="funcnameacceptRequest contract-function">
+<h4 id="acceptRequest">
+<code>acceptRequest(<span class="var-type">uint256</span>
+delegationId
+)<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
-
+ <p> validator calls this function to accept a Delegation Request
+ </p>
 </div>
 </div>
 

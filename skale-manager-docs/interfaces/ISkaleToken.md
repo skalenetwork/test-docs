@@ -1,45 +1,66 @@
-# `ContractManager`
+# `ISkaleToken`
 
-
+ interface of SKALE Token
 
 --- 
 
 
 ## Functions
 
-- [setContractsAddress(contractsName, newContractsAddress)](#setContractsAddress)
-- [getContract(name)](#getContract)
+- [transfer(to, value)](#transfer)
+- [mint(operator, account, amount, userData, operatorData)](#mint)
+- [CAP()](#CAP)
 
 --- 
 
 
 
 
-##### `setContractsAddress`
+##### `transfer`
 
-<div class="funcnamesetContractsAddress contract-function">
-<h4 id="setContractsAddress">
-<code>setContractsAddress(<span class="var-type">string</span>
-contractsName
-, <span class="var-type">address</span>
-newContractsAddress
-)<span class="var-type"></span></code>
+<div class="funcnametransfer contract-function">
+<h4 id="transfer">
+<code>transfer(<span class="var-type">address</span>
+to
+, <span class="var-type">uint256</span>
+value
+)<span class="var-type"> → bool success</span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
- <p> Adds actual contract to mapping of actual contract addresses
- </p>
+
 </div>
 </div>
 
-##### `getContract`
+##### `mint`
 
-<div class="funcnamegetContract contract-function">
-<h4 id="getContract">
-<code>getContract(<span class="var-type">string</span>
-name
-)<span class="var-type"> → address contractAddress</span></code>
+<div class="funcnamemint contract-function">
+<h4 id="mint">
+<code>mint(<span class="var-type">address</span>
+operator
+, <span class="var-type">address</span>
+account
+, <span class="var-type">uint256</span>
+amount
+, <span class="var-type">bytes</span>
+userData
+, <span class="var-type">bytes</span>
+operatorData
+)<span class="var-type"> → bool</span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `CAP`
+
+<div class="funcnameCAP contract-function">
+<h4 id="CAP">
+<code>CAP()<span class="var-type"> → uint256</span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">

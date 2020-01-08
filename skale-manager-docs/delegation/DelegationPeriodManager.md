@@ -1,6 +1,7 @@
-# `SkaleBalances`
+# `DelegationPeriodManager`
 
-
+ Manager handles the values for the stake multiplier <br>
+or delegation periods that are supported by the network
 
 --- 
 
@@ -8,8 +9,11 @@
 ## Functions
 
 - [constructor(newContractsAddress)](#constructor)
-- [withdrawBalance(amountOfTokens)](#withdrawBalance)
-- [stashBalance(recipient, bountyForMiner)](#stashBalance)
+- [getStakeMultiplier(monthsCount)](#getStakeMultiplier)
+- [getDelegationPeriods()](#getDelegationPeriods)
+- [setDelegationPeriod(monthsCount, stakeMultiplier)](#setDelegationPeriod)
+- [removeDelegationPeriod(monthsCount)](#removeDelegationPeriod)
+- [isDelegationPeriodAllowed(monthsCount)](#isDelegationPeriodAllowed)
 
 --- 
 
@@ -27,39 +31,89 @@ newContractsAddress
 </h4>
 <div class="description">
 
-
+ <p> constructor which registers newContractsAddress
+ </p>
 </div>
 </div>
 
-##### `withdrawBalance`
+##### `getStakeMultiplier`
 
-<div class="funcnamewithdrawBalance contract-function">
-<h4 id="withdrawBalance">
-<code>withdrawBalance(<span class="var-type">uint256</span>
-amountOfTokens
-)<span class="var-type"></span></code>
+<div class="funcnamegetStakeMultiplier contract-function">
+<h4 id="getStakeMultiplier">
+<code>getStakeMultiplier(<span class="var-type">uint256</span>
+monthsCount
+)<span class="var-type"> → uint256</span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
-
+ <p> Returns the stake multiplier for this delegation period  <br>
+A multiplier to calculate the various yields per delegation period. e.g. 3m = 1, 6m = 1.5, 12m = 2
+ </p>
 </div>
 </div>
 
-##### `stashBalance`
+##### `getDelegationPeriods`
 
-<div class="funcnamestashBalance contract-function">
-<h4 id="stashBalance">
-<code>stashBalance(<span class="var-type">address</span>
-recipient
+<div class="funcnamegetDelegationPeriods contract-function">
+<h4 id="getDelegationPeriods">
+<code>getDelegationPeriods()<span class="var-type"> → uint256[]</span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+ <p> Returns the set of allowed delegation period
+ </p>
+</div>
+</div>
+
+##### `setDelegationPeriod`
+
+<div class="funcnamesetDelegationPeriod contract-function">
+<h4 id="setDelegationPeriod">
+<code>setDelegationPeriod(<span class="var-type">uint256</span>
+monthsCount
 , <span class="var-type">uint256</span>
-bountyForMiner
+stakeMultiplier
 )<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
+ <p> checks whether the delegation period is allowed in the system
+ </p>
+</div>
+</div>
 
+##### `removeDelegationPeriod`
+
+<div class="funcnameremoveDelegationPeriod contract-function">
+<h4 id="removeDelegationPeriod">
+<code>removeDelegationPeriod(<span class="var-type">uint256</span>
+monthsCount
+)<span class="var-type"></span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+ <p> removes a delegation period from the stake multiplier. </br>
+ </p>
+</div>
+</div>
+
+##### `isDelegationPeriodAllowed`
+
+<div class="funcnameisDelegationPeriodAllowed contract-function">
+<h4 id="isDelegationPeriodAllowed">
+<code>isDelegationPeriodAllowed(<span class="var-type">uint256</span>
+monthsCount
+)<span class="var-type"> → bool</span></code>
+<span class="item">public</span>
+</h4>
+<div class="description">
+
+ <p> checks whether the delegation period is allowed in the system
+ </p>
 </div>
 </div>
 

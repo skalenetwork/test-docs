@@ -1,50 +1,69 @@
-# `ContractManager`
+# `ITokenSaleManager`
 
-
+ Token Sale Manager will initially hold all tokens for the sale and allow users to retrieve them
 
 --- 
 
 
 ## Functions
 
-- [setContractsAddress(contractsName, newContractsAddress)](#setContractsAddress)
-- [getContract(name)](#getContract)
+- [approve(walletAddress, value)](#approve)
+- [retrieve()](#retrieve)
+- [registerSeller(seller)](#registerSeller)
 
 --- 
 
 
 
 
-##### `setContractsAddress`
+##### `approve`
 
-<div class="funcnamesetContractsAddress contract-function">
-<h4 id="setContractsAddress">
-<code>setContractsAddress(<span class="var-type">string</span>
-contractsName
-, <span class="var-type">address</span>
-newContractsAddress
+<div class="funcnameapprove contract-function">
+<h4 id="approve">
+<code>approve(<span class="var-type">address[]</span>
+walletAddress
+, <span class="var-type">uint256[]</span>
+value
 )<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
- <p> Adds actual contract to mapping of actual contract addresses
+ <p> Allocates values for `walletAddresses` 
+At the end of the sale token approval function will be called (can be called multiple times)
  </p>
 </div>
 </div>
 
-##### `getContract`
+##### `retrieve`
 
-<div class="funcnamegetContract contract-function">
-<h4 id="getContract">
-<code>getContract(<span class="var-type">string</span>
-name
-)<span class="var-type"> → address contractAddress</span></code>
+<div class="funcnameretrieve contract-function">
+<h4 id="retrieve">
+<code>retrieve()<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
+ <p>  Transfers the entire value to sender address. Tokens are locked. 
+Each sale participant calls retrieve() - the entire value is transferred to walletAddress
+After the transfer, the token in walletAddress will be locked through DelegationService contract
+User will be able to see the token in the wallet. </p>
+</div>
+</div>
 
+##### `registerSeller`
+
+<div class="funcnameregisterSeller contract-function">
+<h4 id="registerSeller">
+<code>registerSeller(<span class="var-type">address</span>
+seller
+)<span class="var-type"></span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+ <p> Allows seller address to approve tokens transfers
+ </p>
 </div>
 </div>
 

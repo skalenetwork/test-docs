@@ -1,4 +1,4 @@
-# `ContractManager`
+# `ISchainsFunctionality`
 
 
 
@@ -7,39 +7,58 @@
 
 ## Functions
 
-- [setContractsAddress(contractsName, newContractsAddress)](#setContractsAddress)
-- [getContract(name)](#getContract)
+- [addSchain(from, value, data)](#addSchain)
+- [deleteSchain(from, name)](#deleteSchain)
+- [deleteSchainByRoot(name)](#deleteSchainByRoot)
 
 --- 
 
 
 
 
-##### `setContractsAddress`
+##### `addSchain`
 
-<div class="funcnamesetContractsAddress contract-function">
-<h4 id="setContractsAddress">
-<code>setContractsAddress(<span class="var-type">string</span>
-contractsName
-, <span class="var-type">address</span>
-newContractsAddress
+<div class="funcnameaddSchain contract-function">
+<h4 id="addSchain">
+<code>addSchain(<span class="var-type">address</span>
+from
+, <span class="var-type">uint256</span>
+value
+, <span class="var-type">bytes</span>
+data
 )<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
- <p> Adds actual contract to mapping of actual contract addresses
- </p>
+
 </div>
 </div>
 
-##### `getContract`
+##### `deleteSchain`
 
-<div class="funcnamegetContract contract-function">
-<h4 id="getContract">
-<code>getContract(<span class="var-type">string</span>
+<div class="funcnamedeleteSchain contract-function">
+<h4 id="deleteSchain">
+<code>deleteSchain(<span class="var-type">address</span>
+from
+, <span class="var-type">string</span>
 name
-)<span class="var-type"> → address contractAddress</span></code>
+)<span class="var-type"></span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `deleteSchainByRoot`
+
+<div class="funcnamedeleteSchainByRoot contract-function">
+<h4 id="deleteSchainByRoot">
+<code>deleteSchainByRoot(<span class="var-type">string</span>
+name
+)<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">

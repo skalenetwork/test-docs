@@ -1,4 +1,4 @@
-# `ContractManager`
+# `ISkaleBalances`
 
 
 
@@ -7,39 +7,22 @@
 
 ## Functions
 
-- [setContractsAddress(contractsName, newContractsAddress)](#setContractsAddress)
-- [getContract(name)](#getContract)
+- [stashBalance(from, bountyForMiner)](#stashBalance)
 
 --- 
 
 
 
 
-##### `setContractsAddress`
+##### `stashBalance`
 
-<div class="funcnamesetContractsAddress contract-function">
-<h4 id="setContractsAddress">
-<code>setContractsAddress(<span class="var-type">string</span>
-contractsName
-, <span class="var-type">address</span>
-newContractsAddress
+<div class="funcnamestashBalance contract-function">
+<h4 id="stashBalance">
+<code>stashBalance(<span class="var-type">address</span>
+from
+, <span class="var-type">uint256</span>
+bountyForMiner
 )<span class="var-type"></span></code>
-<span class="item">external</span>
-</h4>
-<div class="description">
-
- <p> Adds actual contract to mapping of actual contract addresses
- </p>
-</div>
-</div>
-
-##### `getContract`
-
-<div class="funcnamegetContract contract-function">
-<h4 id="getContract">
-<code>getContract(<span class="var-type">string</span>
-name
-)<span class="var-type"> → address contractAddress</span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">

@@ -1,4 +1,4 @@
-# `ContractManager`
+# `Pricing`
 
 
 
@@ -7,40 +7,77 @@
 
 ## Functions
 
-- [setContractsAddress(contractsName, newContractsAddress)](#setContractsAddress)
-- [getContract(name)](#getContract)
+- [constructor(newContractsAddress)](#constructor)
+- [initNodes()](#initNodes)
+- [adjustPrice()](#adjustPrice)
+- [checkAllNodes()](#checkAllNodes)
+- [getTotalLoadPercentage()](#getTotalLoadPercentage)
 
 --- 
 
 
 
 
-##### `setContractsAddress`
+##### `constructor`
 
-<div class="funcnamesetContractsAddress contract-function">
-<h4 id="setContractsAddress">
-<code>setContractsAddress(<span class="var-type">string</span>
-contractsName
-, <span class="var-type">address</span>
+<div class="funcnameconstructor contract-function">
+<h4 id="constructor">
+<code>constructor(<span class="var-type">address</span>
 newContractsAddress
 )<span class="var-type"></span></code>
+<span class="item">public</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `initNodes`
+
+<div class="funcnameinitNodes contract-function">
+<h4 id="initNodes">
+<code>initNodes()<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
- <p> Adds actual contract to mapping of actual contract addresses
- </p>
+
 </div>
 </div>
 
-##### `getContract`
+##### `adjustPrice`
 
-<div class="funcnamegetContract contract-function">
-<h4 id="getContract">
-<code>getContract(<span class="var-type">string</span>
-name
-)<span class="var-type"> → address contractAddress</span></code>
+<div class="funcnameadjustPrice contract-function">
+<h4 id="adjustPrice">
+<code>adjustPrice()<span class="var-type"></span></code>
 <span class="item">external</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `checkAllNodes`
+
+<div class="funcnamecheckAllNodes contract-function">
+<h4 id="checkAllNodes">
+<code>checkAllNodes()<span class="var-type"></span></code>
+<span class="item">public</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `getTotalLoadPercentage`
+
+<div class="funcnamegetTotalLoadPercentage contract-function">
+<h4 id="getTotalLoadPercentage">
+<code>getTotalLoadPercentage()<span class="var-type"> → uint256</span></code>
+<span class="item">public</span>
 </h4>
 <div class="description">
 

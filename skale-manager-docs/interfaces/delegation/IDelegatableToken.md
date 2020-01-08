@@ -1,50 +1,49 @@
-# `ContractManager`
+# `IDelegatableToken`
 
-
+ Token that can be used for delegation, unlocked
 
 --- 
 
 
 ## Functions
 
-- [setContractsAddress(contractsName, newContractsAddress)](#setContractsAddress)
-- [getContract(name)](#getContract)
+- [getLockedOf(wallet)](#getLockedOf)
+- [getDelegatedOf(wallet)](#getDelegatedOf)
 
 --- 
 
 
 
 
-##### `setContractsAddress`
+##### `getLockedOf`
 
-<div class="funcnamesetContractsAddress contract-function">
-<h4 id="setContractsAddress">
-<code>setContractsAddress(<span class="var-type">string</span>
-contractsName
-, <span class="var-type">address</span>
-newContractsAddress
-)<span class="var-type"></span></code>
+<div class="funcnamegetLockedOf contract-function">
+<h4 id="getLockedOf">
+<code>getLockedOf(<span class="var-type">address</span>
+wallet
+)<span class="var-type"> → bool</span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
- <p> Adds actual contract to mapping of actual contract addresses
+ <p> returns if the token is locked
  </p>
 </div>
 </div>
 
-##### `getContract`
+##### `getDelegatedOf`
 
-<div class="funcnamegetContract contract-function">
-<h4 id="getContract">
-<code>getContract(<span class="var-type">string</span>
-name
-)<span class="var-type"> → address contractAddress</span></code>
+<div class="funcnamegetDelegatedOf contract-function">
+<h4 id="getDelegatedOf">
+<code>getDelegatedOf(<span class="var-type">address</span>
+wallet
+)<span class="var-type"> → bool</span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
-
+ <p> returns if the token is delegated
+ </p>
 </div>
 </div>
 

@@ -1,4 +1,4 @@
-# `SkaleBalances`
+# `ConstantsHolder`
 
 
 
@@ -7,9 +7,12 @@
 
 ## Functions
 
-- [constructor(newContractsAddress)](#constructor)
-- [withdrawBalance(amountOfTokens)](#withdrawBalance)
-- [stashBalance(recipient, bountyForMiner)](#stashBalance)
+- [constructor(contractsAddress)](#constructor)
+- [setPeriods(newRewardPeriod, newDeltaPeriod)](#setPeriods)
+- [setCheckTime(newCheckTime)](#setCheckTime)
+- [setLastTimeUnderloaded()](#setLastTimeUnderloaded)
+- [setLastTimeOverloaded()](#setLastTimeOverloaded)
+- [setLatency(newAllowableLatency)](#setLatency)
 
 --- 
 
@@ -21,7 +24,7 @@
 <div class="funcnameconstructor contract-function">
 <h4 id="constructor">
 <code>constructor(<span class="var-type">address</span>
-newContractsAddress
+contractsAddress
 )<span class="var-type"></span></code>
 <span class="item">public</span>
 </h4>
@@ -31,35 +34,81 @@ newContractsAddress
 </div>
 </div>
 
-##### `withdrawBalance`
+##### `setPeriods`
 
-<div class="funcnamewithdrawBalance contract-function">
-<h4 id="withdrawBalance">
-<code>withdrawBalance(<span class="var-type">uint256</span>
-amountOfTokens
+<div class="funcnamesetPeriods contract-function">
+<h4 id="setPeriods">
+<code>setPeriods(<span class="var-type">uint32</span>
+newRewardPeriod
+, <span class="var-type">uint32</span>
+newDeltaPeriod
 )<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
-
+ <p> Set reward and delta periods to new one, run only by owner. This function
+only for tests.
+ </p>
 </div>
 </div>
 
-##### `stashBalance`
+##### `setCheckTime`
 
-<div class="funcnamestashBalance contract-function">
-<h4 id="stashBalance">
-<code>stashBalance(<span class="var-type">address</span>
-recipient
-, <span class="var-type">uint256</span>
-bountyForMiner
+<div class="funcnamesetCheckTime contract-function">
+<h4 id="setCheckTime">
+<code>setCheckTime(<span class="var-type">uint8</span>
+newCheckTime
 )<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
+ <p> Set new check time. This function only for tests.
+ </p>
+</div>
+</div>
 
+##### `setLastTimeUnderloaded`
+
+<div class="funcnamesetLastTimeUnderloaded contract-function">
+<h4 id="setLastTimeUnderloaded">
+<code>setLastTimeUnderloaded()<span class="var-type"></span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+ <p> Set time if system underloaded, run only by NodesFunctionality contract </p>
+</div>
+</div>
+
+##### `setLastTimeOverloaded`
+
+<div class="funcnamesetLastTimeOverloaded contract-function">
+<h4 id="setLastTimeOverloaded">
+<code>setLastTimeOverloaded()<span class="var-type"></span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+ <p> Set time if system iverloaded, run only by SchainsFunctionality contract </p>
+</div>
+</div>
+
+##### `setLatency`
+
+<div class="funcnamesetLatency contract-function">
+<h4 id="setLatency">
+<code>setLatency(<span class="var-type">uint32</span>
+newAllowableLatency
+)<span class="var-type"></span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+ <p> Set latency new one in ms, run only by owner. This function
+only for tests.
+ </p>
 </div>
 </div>
 

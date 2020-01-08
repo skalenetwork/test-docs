@@ -1,4 +1,4 @@
-# `ContractManager`
+# `Decryption`
 
 
 
@@ -7,39 +7,40 @@
 
 ## Functions
 
-- [setContractsAddress(contractsName, newContractsAddress)](#setContractsAddress)
-- [getContract(name)](#getContract)
+- [encrypt(secretNumber, key)](#encrypt)
+- [decrypt(ciphertext, key)](#decrypt)
 
 --- 
 
 
 
 
-##### `setContractsAddress`
+##### `encrypt`
 
-<div class="funcnamesetContractsAddress contract-function">
-<h4 id="setContractsAddress">
-<code>setContractsAddress(<span class="var-type">string</span>
-contractsName
-, <span class="var-type">address</span>
-newContractsAddress
-)<span class="var-type"></span></code>
+<div class="funcnameencrypt contract-function">
+<h4 id="encrypt">
+<code>encrypt(<span class="var-type">uint256</span>
+secretNumber
+, <span class="var-type">bytes32</span>
+key
+)<span class="var-type"> → bytes32 ciphertext</span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
- <p> Adds actual contract to mapping of actual contract addresses
- </p>
+
 </div>
 </div>
 
-##### `getContract`
+##### `decrypt`
 
-<div class="funcnamegetContract contract-function">
-<h4 id="getContract">
-<code>getContract(<span class="var-type">string</span>
-name
-)<span class="var-type"> → address contractAddress</span></code>
+<div class="funcnamedecrypt contract-function">
+<h4 id="decrypt">
+<code>decrypt(<span class="var-type">bytes32</span>
+ciphertext
+, <span class="var-type">bytes32</span>
+key
+)<span class="var-type"> → uint256 secretNumber</span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">

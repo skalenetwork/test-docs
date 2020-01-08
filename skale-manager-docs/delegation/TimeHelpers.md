@@ -1,4 +1,4 @@
-# `ContractManager`
+# `TimeHelpers`
 
 
 
@@ -7,40 +7,55 @@
 
 ## Functions
 
-- [setContractsAddress(contractsName, newContractsAddress)](#setContractsAddress)
-- [getContract(name)](#getContract)
+- [getNextMonthStart()](#getNextMonthStart)
+- [calculateDelegationEndTime(requestTime, delegationPeriod, redelegationPeriod)](#calculateDelegationEndTime)
+- [getNextMonthStartFromDate(dateTimestamp)](#getNextMonthStartFromDate)
 
 --- 
 
 
 
 
-##### `setContractsAddress`
+##### `getNextMonthStart`
 
-<div class="funcnamesetContractsAddress contract-function">
-<h4 id="setContractsAddress">
-<code>setContractsAddress(<span class="var-type">string</span>
-contractsName
-, <span class="var-type">address</span>
-newContractsAddress
-)<span class="var-type"></span></code>
+<div class="funcnamegetNextMonthStart contract-function">
+<h4 id="getNextMonthStart">
+<code>getNextMonthStart()<span class="var-type"> → uint256 timestamp</span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
- <p> Adds actual contract to mapping of actual contract addresses
- </p>
+
 </div>
 </div>
 
-##### `getContract`
+##### `calculateDelegationEndTime`
 
-<div class="funcnamegetContract contract-function">
-<h4 id="getContract">
-<code>getContract(<span class="var-type">string</span>
-name
-)<span class="var-type"> → address contractAddress</span></code>
+<div class="funcnamecalculateDelegationEndTime contract-function">
+<h4 id="calculateDelegationEndTime">
+<code>calculateDelegationEndTime(<span class="var-type">uint256</span>
+requestTime
+, <span class="var-type">uint256</span>
+delegationPeriod
+, <span class="var-type">uint256</span>
+redelegationPeriod
+)<span class="var-type"> → uint256 timestamp</span></code>
 <span class="item">external</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `getNextMonthStartFromDate`
+
+<div class="funcnamegetNextMonthStartFromDate contract-function">
+<h4 id="getNextMonthStartFromDate">
+<code>getNextMonthStartFromDate(<span class="var-type">uint256</span>
+dateTimestamp
+)<span class="var-type"> → uint256 timestamp</span></code>
+<span class="item">public</span>
 </h4>
 <div class="description">
 

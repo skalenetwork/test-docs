@@ -1,4 +1,4 @@
-# `ContractManager`
+# `IManagerData`
 
 
 
@@ -7,39 +7,92 @@
 
 ## Functions
 
-- [setContractsAddress(contractsName, newContractsAddress)](#setContractsAddress)
-- [getContract(name)](#getContract)
+- [setMinersCap(newMinersCap)](#setMinersCap)
+- [setStageTimeAndStageNodes(newStageNodes)](#setStageTimeAndStageNodes)
+- [minersCap()](#minersCap)
+- [startTime()](#startTime)
+- [stageTime()](#stageTime)
+- [stageNodes()](#stageNodes)
 
 --- 
 
 
 
 
-##### `setContractsAddress`
+##### `setMinersCap`
 
-<div class="funcnamesetContractsAddress contract-function">
-<h4 id="setContractsAddress">
-<code>setContractsAddress(<span class="var-type">string</span>
-contractsName
-, <span class="var-type">address</span>
-newContractsAddress
+<div class="funcnamesetMinersCap contract-function">
+<h4 id="setMinersCap">
+<code>setMinersCap(<span class="var-type">uint256</span>
+newMinersCap
 )<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
- <p> Adds actual contract to mapping of actual contract addresses
- </p>
+
 </div>
 </div>
 
-##### `getContract`
+##### `setStageTimeAndStageNodes`
 
-<div class="funcnamegetContract contract-function">
-<h4 id="getContract">
-<code>getContract(<span class="var-type">string</span>
-name
-)<span class="var-type"> → address contractAddress</span></code>
+<div class="funcnamesetStageTimeAndStageNodes contract-function">
+<h4 id="setStageTimeAndStageNodes">
+<code>setStageTimeAndStageNodes(<span class="var-type">uint256</span>
+newStageNodes
+)<span class="var-type"></span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `minersCap`
+
+<div class="funcnameminersCap contract-function">
+<h4 id="minersCap">
+<code>minersCap()<span class="var-type"> → uint256</span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `startTime`
+
+<div class="funcnamestartTime contract-function">
+<h4 id="startTime">
+<code>startTime()<span class="var-type"> → uint32</span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `stageTime`
+
+<div class="funcnamestageTime contract-function">
+<h4 id="stageTime">
+<code>stageTime()<span class="var-type"> → uint32</span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `stageNodes`
+
+<div class="funcnamestageNodes contract-function">
+<h4 id="stageNodes">
+<code>stageNodes()<span class="var-type"> → uint256</span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">

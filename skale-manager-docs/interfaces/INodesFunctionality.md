@@ -1,4 +1,4 @@
-# `ContractManager`
+# `INodesFunctionality`
 
 
 
@@ -7,39 +7,94 @@
 
 ## Functions
 
-- [setContractsAddress(contractsName, newContractsAddress)](#setContractsAddress)
-- [getContract(name)](#getContract)
+- [createNode(from, value, data)](#createNode)
+- [initWithdrawDeposit(from, nodeIndex)](#initWithdrawDeposit)
+- [completeWithdrawDeposit(from, nodeIndex)](#completeWithdrawDeposit)
+- [removeNode(from, nodeIndex)](#removeNode)
+- [removeNodeByRoot(nodeIndex)](#removeNodeByRoot)
 
 --- 
 
 
 
 
-##### `setContractsAddress`
+##### `createNode`
 
-<div class="funcnamesetContractsAddress contract-function">
-<h4 id="setContractsAddress">
-<code>setContractsAddress(<span class="var-type">string</span>
-contractsName
-, <span class="var-type">address</span>
-newContractsAddress
+<div class="funcnamecreateNode contract-function">
+<h4 id="createNode">
+<code>createNode(<span class="var-type">address</span>
+from
+, <span class="var-type">uint256</span>
+value
+, <span class="var-type">bytes</span>
+data
+)<span class="var-type"> → uint256</span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `initWithdrawDeposit`
+
+<div class="funcnameinitWithdrawDeposit contract-function">
+<h4 id="initWithdrawDeposit">
+<code>initWithdrawDeposit(<span class="var-type">address</span>
+from
+, <span class="var-type">uint256</span>
+nodeIndex
+)<span class="var-type"> → bool</span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `completeWithdrawDeposit`
+
+<div class="funcnamecompleteWithdrawDeposit contract-function">
+<h4 id="completeWithdrawDeposit">
+<code>completeWithdrawDeposit(<span class="var-type">address</span>
+from
+, <span class="var-type">uint256</span>
+nodeIndex
+)<span class="var-type"> → uint256</span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `removeNode`
+
+<div class="funcnameremoveNode contract-function">
+<h4 id="removeNode">
+<code>removeNode(<span class="var-type">address</span>
+from
+, <span class="var-type">uint256</span>
+nodeIndex
 )<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
- <p> Adds actual contract to mapping of actual contract addresses
- </p>
+
 </div>
 </div>
 
-##### `getContract`
+##### `removeNodeByRoot`
 
-<div class="funcnamegetContract contract-function">
-<h4 id="getContract">
-<code>getContract(<span class="var-type">string</span>
-name
-)<span class="var-type"> → address contractAddress</span></code>
+<div class="funcnameremoveNodeByRoot contract-function">
+<h4 id="removeNodeByRoot">
+<code>removeNodeByRoot(<span class="var-type">uint256</span>
+nodeIndex
+)<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">

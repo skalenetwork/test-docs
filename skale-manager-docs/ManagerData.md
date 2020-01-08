@@ -1,4 +1,4 @@
-# `ContractManager`
+# `ManagerData`
 
 
 
@@ -7,39 +7,54 @@
 
 ## Functions
 
-- [setContractsAddress(contractsName, newContractsAddress)](#setContractsAddress)
-- [getContract(name)](#getContract)
+- [constructor(newExecutorName, newContractsAddress)](#constructor)
+- [setMinersCap(newMinersCap)](#setMinersCap)
+- [setStageTimeAndStageNodes(newStageNodes)](#setStageTimeAndStageNodes)
 
 --- 
 
 
 
 
-##### `setContractsAddress`
+##### `constructor`
 
-<div class="funcnamesetContractsAddress contract-function">
-<h4 id="setContractsAddress">
-<code>setContractsAddress(<span class="var-type">string</span>
-contractsName
+<div class="funcnameconstructor contract-function">
+<h4 id="constructor">
+<code>constructor(<span class="var-type">string</span>
+newExecutorName
 , <span class="var-type">address</span>
 newContractsAddress
+)<span class="var-type"></span></code>
+<span class="item">public</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `setMinersCap`
+
+<div class="funcnamesetMinersCap contract-function">
+<h4 id="setMinersCap">
+<code>setMinersCap(<span class="var-type">uint256</span>
+newMinersCap
 )<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
- <p> Adds actual contract to mapping of actual contract addresses
- </p>
+
 </div>
 </div>
 
-##### `getContract`
+##### `setStageTimeAndStageNodes`
 
-<div class="funcnamegetContract contract-function">
-<h4 id="getContract">
-<code>getContract(<span class="var-type">string</span>
-name
-)<span class="var-type"> → address contractAddress</span></code>
+<div class="funcnamesetStageTimeAndStageNodes contract-function">
+<h4 id="setStageTimeAndStageNodes">
+<code>setStageTimeAndStageNodes(<span class="var-type">uint256</span>
+newStageNodes
+)<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">

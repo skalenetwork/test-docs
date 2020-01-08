@@ -1,4 +1,4 @@
-# `ContractManager`
+# `IValidatorsFunctionality`
 
 
 
@@ -7,39 +7,90 @@
 
 ## Functions
 
-- [setContractsAddress(contractsName, newContractsAddress)](#setContractsAddress)
-- [getContract(name)](#getContract)
+- [addValidator(nodeIndex)](#addValidator)
+- [upgradeValidator(nodeIndex)](#upgradeValidator)
+- [sendVerdict(fromValidatorIndex, toNodeIndex, downtime, latency)](#sendVerdict)
+- [calculateMetrics(nodeIndex)](#calculateMetrics)
+- [deleteValidatorByRoot(nodeIndex)](#deleteValidatorByRoot)
 
 --- 
 
 
 
 
-##### `setContractsAddress`
+##### `addValidator`
 
-<div class="funcnamesetContractsAddress contract-function">
-<h4 id="setContractsAddress">
-<code>setContractsAddress(<span class="var-type">string</span>
-contractsName
-, <span class="var-type">address</span>
-newContractsAddress
+<div class="funcnameaddValidator contract-function">
+<h4 id="addValidator">
+<code>addValidator(<span class="var-type">uint256</span>
+nodeIndex
 )<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">
 
- <p> Adds actual contract to mapping of actual contract addresses
- </p>
+
 </div>
 </div>
 
-##### `getContract`
+##### `upgradeValidator`
 
-<div class="funcnamegetContract contract-function">
-<h4 id="getContract">
-<code>getContract(<span class="var-type">string</span>
-name
-)<span class="var-type"> → address contractAddress</span></code>
+<div class="funcnameupgradeValidator contract-function">
+<h4 id="upgradeValidator">
+<code>upgradeValidator(<span class="var-type">uint256</span>
+nodeIndex
+)<span class="var-type"></span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `sendVerdict`
+
+<div class="funcnamesendVerdict contract-function">
+<h4 id="sendVerdict">
+<code>sendVerdict(<span class="var-type">uint256</span>
+fromValidatorIndex
+, <span class="var-type">uint256</span>
+toNodeIndex
+, <span class="var-type">uint32</span>
+downtime
+, <span class="var-type">uint32</span>
+latency
+)<span class="var-type"></span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `calculateMetrics`
+
+<div class="funcnamecalculateMetrics contract-function">
+<h4 id="calculateMetrics">
+<code>calculateMetrics(<span class="var-type">uint256</span>
+nodeIndex
+)<span class="var-type"> → uint32, uint32</span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `deleteValidatorByRoot`
+
+<div class="funcnamedeleteValidatorByRoot contract-function">
+<h4 id="deleteValidatorByRoot">
+<code>deleteValidatorByRoot(<span class="var-type">uint256</span>
+nodeIndex
+)<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
 <div class="description">

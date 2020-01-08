@@ -1,4 +1,4 @@
-# `SkaleBalances`
+# `NodesFunctionality`
 
 
 
@@ -8,8 +8,12 @@
 ## Functions
 
 - [constructor(newContractsAddress)](#constructor)
-- [withdrawBalance(amountOfTokens)](#withdrawBalance)
-- [stashBalance(recipient, bountyForMiner)](#stashBalance)
+- [createNode(from, value, data)](#createNode)
+- [removeNode(from, nodeIndex)](#removeNode)
+- [removeNodeByRoot(nodeIndex)](#removeNodeByRoot)
+- [initWithdrawDeposit(from, nodeIndex)](#initWithdrawDeposit)
+- [completeWithdrawDeposit(from, nodeIndex)](#completeWithdrawDeposit)
+- [setNodeType(nodesDataAddress, constantsAddress, nodeIndex)](#setNodeType)
 
 --- 
 
@@ -31,12 +35,33 @@ newContractsAddress
 </div>
 </div>
 
-##### `withdrawBalance`
+##### `createNode`
 
-<div class="funcnamewithdrawBalance contract-function">
-<h4 id="withdrawBalance">
-<code>withdrawBalance(<span class="var-type">uint256</span>
-amountOfTokens
+<div class="funcnamecreateNode contract-function">
+<h4 id="createNode">
+<code>createNode(<span class="var-type">address</span>
+from
+, <span class="var-type">uint256</span>
+value
+, <span class="var-type">bytes</span>
+data
+)<span class="var-type"> → uint256 nodeIndex</span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `removeNode`
+
+<div class="funcnameremoveNode contract-function">
+<h4 id="removeNode">
+<code>removeNode(<span class="var-type">address</span>
+from
+, <span class="var-type">uint256</span>
+nodeIndex
 )<span class="var-type"></span></code>
 <span class="item">external</span>
 </h4>
@@ -46,16 +71,67 @@ amountOfTokens
 </div>
 </div>
 
-##### `stashBalance`
+##### `removeNodeByRoot`
 
-<div class="funcnamestashBalance contract-function">
-<h4 id="stashBalance">
-<code>stashBalance(<span class="var-type">address</span>
-recipient
-, <span class="var-type">uint256</span>
-bountyForMiner
+<div class="funcnameremoveNodeByRoot contract-function">
+<h4 id="removeNodeByRoot">
+<code>removeNodeByRoot(<span class="var-type">uint256</span>
+nodeIndex
 )<span class="var-type"></span></code>
 <span class="item">external</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `initWithdrawDeposit`
+
+<div class="funcnameinitWithdrawDeposit contract-function">
+<h4 id="initWithdrawDeposit">
+<code>initWithdrawDeposit(<span class="var-type">address</span>
+from
+, <span class="var-type">uint256</span>
+nodeIndex
+)<span class="var-type"> → bool</span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `completeWithdrawDeposit`
+
+<div class="funcnamecompleteWithdrawDeposit contract-function">
+<h4 id="completeWithdrawDeposit">
+<code>completeWithdrawDeposit(<span class="var-type">address</span>
+from
+, <span class="var-type">uint256</span>
+nodeIndex
+)<span class="var-type"> → uint256</span></code>
+<span class="item">external</span>
+</h4>
+<div class="description">
+
+
+</div>
+</div>
+
+##### `setNodeType`
+
+<div class="funcnamesetNodeType contract-function">
+<h4 id="setNodeType">
+<code>setNodeType(<span class="var-type">address</span>
+nodesDataAddress
+, <span class="var-type">address</span>
+constantsAddress
+, <span class="var-type">uint256</span>
+nodeIndex
+)<span class="var-type"></span></code>
+<span class="item">internal</span>
 </h4>
 <div class="description">
 
