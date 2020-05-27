@@ -880,8 +880,6 @@ Emits a {SlashingEvent}.
         opacity: 0.7;
     }
 
-    .contract-subindex.
-
     .contract-item {
         border-radius: 3rem;
         border: solid 1px #ddd;
